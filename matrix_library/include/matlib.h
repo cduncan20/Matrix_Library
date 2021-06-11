@@ -25,11 +25,11 @@ class Matrix
 
         // Declare Matrix Multiplication copy operator
         template<class T2, int m2, int n2,int m3, int n3>
-        friend Matrix<T2, m2, l> operator*(const Matrix<T2, m2, n2> &, const Matrix<T2, m3, n3> &);
+        friend Matrix<T2, m2, n3> operator*(const Matrix<T2, m2, n2> &, const Matrix<T2, m3, n3> &);
 
         // Declare Matrix Transpose copy function
-        friend class Matrix<T, n4, m4>;
-        Matrix<T, n4, m4> transpose();
+        friend class Matrix<T, n, m>;
+        Matrix<T, n, m> transpose();
 };
 
 /**CONSTRUCTOR*//*

@@ -8,6 +8,10 @@
 
 The objective of this project was the design a library within C++ 11 that was able to perform multiplication and transposition functions on user-defined matrices. Additionally, a test script was required to ensure the library functions were performing as intended.
 
+<h2>Requirements</h2>
+
+In order to build this project, you must be using CMake version 3.14.
+
 <h2>How to Use</h2>
 
 In order to use this library, each matrix needs to be initialized as a vector of vectors. This includes both input and output matrices, where the output matrices are initialized as empty. Once a matrix has been initialized as vector of vectors, it is then initialized as an object of the class *Matrix*. After this the matrix can be multiplied by another matrix object of the same class by using the asterisk(*) operator and it can be transposed by using the class function *transpose()*. More detail with examples is shown within the *demo.cpp* file. The location of this file is provided within the *File Location* section below. To see the results of the demonstration within the terminal, follow these steps:
