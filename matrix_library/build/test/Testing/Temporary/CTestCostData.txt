@@ -1,7 +1,0 @@
-Matrix_Library_Test.positive_row_col 1 0.00261122
-Matrix_Library_Test.multiplication_row_col_qty 1 0.00232181
-Matrix_Library_Test.multiplication_result_size 1 0.00222806
-Matrix_Library_Test.multiplication_result_elements 1 0.00219972
-Matrix_Library_Test.transpose_result_size 1 0.00255009
-Matrix_Library_Test.transpose_result_elements 1 0.00266066
----
