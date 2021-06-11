@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "matlib.h"
+#include "../include/matlib.h"
 
 using namespace std;
 
