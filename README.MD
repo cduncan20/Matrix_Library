@@ -10,7 +10,14 @@ The objective of this project was the design a library within C++ 11 that was ab
 
 <h2>How to Use</h2>
 
-In order to use this library, each matrix needs to be initialized as a vector of vectors. This includes both input and output matrices, where the output matrices are initialized as empty. Once a matrix has been initialized as vector of vectors, it is then initialized as an object of the class *Matrix*. After this the matrix can be multiplied by another matrix object of the same class by using the asterisk(*) operator and it can be tranposed by using the class function *transpose()*. More detail with examples is shown within the *demo.cpp* file. The location of this file is provided within the *File Location* section below.
+In order to use this library, each matrix needs to be initialized as a vector of vectors. This includes both input and output matrices, where the output matrices are initialized as empty. Once a matrix has been initialized as vector of vectors, it is then initialized as an object of the class *Matrix*. After this the matrix can be multiplied by another matrix object of the same class by using the asterisk(*) operator and it can be tranposed by using the class function *transpose()*. More detail with examples is shown within the *demo.cpp* file. The location of this file is provided within the *File Location* section below. To see the results of the demonstration within the terminal, follow these steps:
+1. Perform all steps within the *Building Project* section below.
+2. Navigate into the location titled *build* by entering the following: <br />
+    `cd build`<br />
+3. Execute the executable file called *matrix_library_demo* by entering the following: <br />
+    `src/matrix_library_demo`<br />
+
+After performing the steps above, the results of the demo should appear within the terminal.
 
 <h2>File Directory</h2>
 
