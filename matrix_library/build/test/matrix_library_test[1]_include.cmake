@@ -1,0 +1,5 @@
+if(EXISTS "/home/casey/repos/duncan_casey/matrix_library/build/test/matrix_library_test[1]_tests.cmake")
+  include("/home/casey/repos/duncan_casey/matrix_library/build/test/matrix_library_test[1]_tests.cmake")
+else()
+  add_test(matrix_library_test_NOT_BUILT matrix_library_test_NOT_BUILT)
+endif()

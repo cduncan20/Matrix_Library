@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/matlib.h
+vector
+-
+
+/home/casey/repos/duncan_casey/matrix_library/src/demo.cpp
+iostream
+-
+vector
+-
+matlib.h
+/home/casey/repos/duncan_casey/matrix_library/src/matlib.h
+
