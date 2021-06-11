@@ -24,12 +24,12 @@ class Matrix
         void print();
 
         // Declare Matrix Multiplication copy operator
-        template<class T2, int m2, int n2,int p, int l>
-        friend Matrix<T2, m2, l> operator*(const Matrix<T2, m2, n2> &, const Matrix<T2, p, l> &);
+        template<class T2, int m2, int n2,int m3, int n3>
+        friend Matrix<T2, m2, l> operator*(const Matrix<T2, m2, n2> &, const Matrix<T2, m3, n3> &);
 
         // Declare Matrix Transpose copy function
-        friend class Matrix<T, n, m>;
-        Matrix<T, n, m> transpose();
+        friend class Matrix<T, n4, m4>;
+        Matrix<T, n4, m4> transpose();
 };
 
 /**CONSTRUCTOR*//*
@@ -94,10 +94,10 @@ void Matrix<T, m, n>::print()
 /**MATRIX MULTIPLICATION*//*
 Multiplication function created as an operator
 - Input(s):
-    1. m1 is the object of a matrix that is to be multiplied of size 'm x n'.
-    2. m2 is the object of another matrix or size 'p x l'.
+    1. m1 is the object of a matrix that is to be multiplied of size 'm1 x n2'.
+    2. m2 is the object of another matrix or size 'm2 x n2'.
 - Output(s):
-    1. m3 is the objext of a matrix of size 'm x l', which is the result of m1 x m2.
+    1. m3 is the objext of a matrix of size 'm1 x n2', which is the result of m1 x m2.
 - NOTES:
     1. Multiplication is done using the '*' operation. For example: m3 = m1 * m2;
 */
@@ -119,7 +119,7 @@ Matrix<T, m1, n2> operator*(const Matrix<T, m1, n1> &mat1, const Matrix<T, m2, n
         int n_col = mat2.n_col; // mat3 columns
         vector<vector<T>> tmp_mat; // temp holder
 
-        // Create tmp_mat matrix of size 'm x l' that is filled with zeros
+        // Create tmp_mat matrix of size 'm1 x n2' that is filled with zeros
         for(int i = 0; i < m1; i++) // Loop through number of rows 'm1'
         {
             // Create vector 'mat3_i_els' for storing number of elements in row 'i' as a zeros
@@ -178,7 +178,7 @@ Matrix<T, n, m> Matrix<T, m, n>::transpose() // Define transpose function.
     // Define temp holder for m4 (output) matrix.
     vector<vector<T>> tmp_mat; // temp holder
 
-    // Create tmp_mat matrix of size 'm x l' that is filled with zeros
+    // Create tmp_mat matrix of size 'n x m' that is filled with zeros
     for(int i = 0; i < n; i++) // Loop through number of columns 'n'
     {
         // Create vector 'm4_i_els' for storing number of elements in m1 column 'i' as a zeros
